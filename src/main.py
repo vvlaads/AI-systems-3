@@ -25,7 +25,7 @@ df = pd.read_csv(get_resource_path("california_housing_train.csv"))
 df = df.dropna()  # Убрать пустые строки
 
 # СИНТЕТИЧЕСКИЙ ПРИЗНАК:
-# df['bedrooms_per_room'] = df['total_bedrooms'] / df['total_rooms']
+df['bedrooms_per_room'] = df['total_bedrooms'] / df['total_rooms']
 
 print("=" * 100)
 print("Основная статистика:")
